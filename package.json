@@ -4,6 +4,7 @@
   "description": "A wedding website with loads of features.",
   "main": "npmfile.js",
   "scripts": {
+    "start": "node start.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,7 +27,9 @@
   },
   "dependencies": {
     "animate.css": "^3.5.2",
+    "finalhandler": "^1.1.1",
     "font-awesome": "^4.7.0",
+    "serve-static": "^1.13.2",
     "waypoints": "^4.0.1"
   }
 }

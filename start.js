@@ -1,6 +1,7 @@
 var finalhandler = require('finalhandler')
 var http = require('http')
 var serveStatic = require('serve-static')
+var port = process.env.PORT || 3000;
 
 // Serve up public/ftp folder
 var serve = serveStatic('./', {'index': ['index.html', 'index.htm']})
@@ -11,4 +12,4 @@ var server = http.createServer(function onRequest (req, res) {
 })
 
 // Listen
-server.listen(80)
+server.listen(port)
